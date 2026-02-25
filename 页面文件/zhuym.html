@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页模板</title>
+    <link rel="stylesheet" href="../css文件/主页面.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧边栏 -->
+        <div class="sidebar">
+            <!-- 头像和信息区域 -->
+            <div class="profile-header">
+                <img src="../图片/默认头像.jpg" alt="个人头像" class="avatar">
+                <div class="profile-info">
+                    <h3 class="name">我的名字</h3>
+                    <h4 class="intro">前端开发者</h4>
+                    <h6 class="version">0.1.0.1</h6>
+                </div>
+            </div>
+
+            <!-- 社交按钮（点击直接跳转） -->
+            <div class="social-buttons">
+                <a href="" class="social-btn" style="background:#333;" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i></a>
+                <a href="" class="social-btn" style="background:#000;" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i></a>
+                <a href="" class="social-btn" target="_blank" rel="noopener noreferrer">
+                <i></i></a>
+                <a href="" class="social-btn" target="_blank" rel="noopener noreferrer">
+                <i></i></a>
+                <a href="#" class="social-btn"></a>
+                <a href="#" class="social-btn"></a>
+                <a href="#" class="social-btn"></a>
+                <a href="#" class="social-btn"></a>
+            </div>
+
+            <!-- 功能按钮（点击切换内容） -->
+            <div class="action-buttons">
+                <button class="action-btn" data-tab="fans">粉丝群/相册</button>
+                <button class="action-btn" data-tab="schedule">活动/日程</button>
+                <button class="action-btn" data-tab="album">更新公告</button>
+                <button class="action-btn" data-tab="update">其他功能</button>
+            </div>
+        </div>
+
+        <!-- 右侧内容显示区域 -->
+        <div class="content-area" id="contentArea">
+        </div>
+    </div>
+
+    <script src="../js文件/主页面.js"></script>
+</body>
+</html>
