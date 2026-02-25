@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    background: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    width: 1000px;
+    margin: 30px auto;
+    min-height: 600px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    width: 280px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.intro {
+    font-size: 14px;
+    font-weight: normal;
+    color: #ccc;
+    margin-bottom: 4px;
+}
+
+.version {
+    font-size: 12px;
+    color: #aaa;
+    font-weight: normal;
+}
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #34495e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.action-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.action-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #3498db;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background: #2980b9;
+}
+
+.content-area {
+    flex: 1;
+    padding: 40px;
+    font-size: 16px;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* 粉丝群页面排版：文字左，图片右 */
+.fans-wrapper {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.fans-wrapper img {
+    width: 140px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 相册切换按钮 */
+.album-controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.album-controls button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* 子按钮居中 */
+.sub-buttons {
+    display: flex;
+    gap: 20px;
+    align-self: flex-start;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+}
+
+.sub-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
