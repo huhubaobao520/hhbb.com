@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>WebCat</title>
+    <link rel="stylesheet" type="text/css" href="../css文件/全局文件.css">
+    <link rel="stylesheet" type="text/css" href="../css文件/样式管理.css">
+  </head>
+  <body>	
+    <div class="dlym">
+         <center>
+             <h2 class="hh">找回密码</h2>
+         </center>
+         <div class="jj">
+             <center>
+                 <label class="gl">手机号:</label>
+                 <input class="gl" type="text" name="phone" placeholder="请输入11位手机号"><br>
+                 <label class="gl">验证码:</label>
+                 <input class="gl code-input" type="text" name="code" placeholder="请输入验证码">
+                 <button type="button" class="code-btn" onclick="getCode()">获取</button><br>
+                 <label class="gl">新密码:</label>
+                 <input class="gl" type="password" name="newpwd" placeholder="请输入新密码"><br>
+                 <button class="code-btn-1" onclick="resetPwd()">重置密码</button><br>
+             </center>
+             <div style="display:flex; justify-content:space-between; padding:10px;">
+             <a href="javascript:history.back()" class="ys">返回登录</a>
+             </div>
+         </div>
+     </div>
+  </body>
+  <script src="../js文件/登录判断.js"></script>
+</html>

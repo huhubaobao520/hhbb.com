@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>WebCat</title>
+    <link rel="stylesheet" type="text/css" href="../css文件/全局文件.css">
+    <link rel="stylesheet" type="text/css" href="../css文件/样式管理.css">
+  </head>
+  <body>
+     <div class="dlym">
+         <center>
+             <h2 class="hh">用户注册</h2>
+         </center>
+         <div class="jj">
+             <center>
+                 <label class="gl">手&nbsp;&nbsp;机&nbsp;&nbsp;号:</label>
+                 <input class="gl" type="text" name="phone" placeholder="请输入11位手机号"><br>
+                 <label class="gl">验&nbsp;&nbsp;证&nbsp;&nbsp;码:</label>
+                 <input class="gl code-input" type="text" name="code" placeholder="请输入验证码">
+                 <button type="button" class="code-btn" onclick="getCode()">获取</button><br>
+                 <label class="gl">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:</label>
+                 <input class="gl" type="password" name="password" placeholder="请输入密码"><br>
+                 <label class="gl">确认密码:</label>
+                 <input class="gl" type="password" name="repassword" placeholder="请确认密码"><br>
+                 <button class="code-btn-1" onclick="doRegister()">注册</button><br></center>
+                 <a href="javascript:history.back()" class="ys">返回登录</a>
+         </div>
+     </div>
+ </body>
+ <script src="../js文件/登录判断.js"></script>
+</html>
